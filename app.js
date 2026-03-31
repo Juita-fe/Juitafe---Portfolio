@@ -238,8 +238,9 @@ const translations = {
   },
 };
 
-// Language functions
-function toggleMenu() {
+// Hamburger menu
+function toggleMenu(e) {
+  e.stopPropagation();
   const menu = document.getElementById("navMenu");
   menu.classList.toggle("open");
 }
@@ -248,46 +249,65 @@ function closeMenu() {
   const menu = document.getElementById("navMenu");
   menu.classList.remove("open");
 }
+
+// Language dropdown
+function toggleLangMenu(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById("langDropdown");
+  dropdown.classList.toggle("open");
+}
+
+// Close dropdowns when clicking outside
 document.addEventListener("click", function (e) {
-  const toggle = document.querySelector(".lang-toggle");
-  if (!toggle.contains(e.target)) {
+  const langToggle = document.querySelector(".lang-toggle");
+  const navMenu = document.getElementById("navMenu");
+  const hamburger = document.querySelector(".hamburger");
+
+  if (langToggle && !langToggle.contains(e.target)) {
     document.getElementById("langDropdown").classList.remove("open");
+  }
+  if (navMenu && !navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    navMenu.classList.remove("open");
   }
 });
 
+// Set language
 function setLang(lang, flag, label) {
   document.querySelectorAll("[data-lang-key]").forEach((el) => {
     const key = el.getAttribute("data-lang-key");
-    if (translations[lang][key]) {
+    if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
   document.querySelectorAll("[data-lang-key-placeholder]").forEach((el) => {
     const key = el.getAttribute("data-lang-key-placeholder");
-    if (translations[lang][key]) {
+    if (translations[lang] && translations[lang][key]) {
       el.placeholder = translations[lang][key];
     }
   });
   document.querySelectorAll(".lang-option").forEach((btn) => {
     btn.classList.remove("active");
   });
-  event.target.closest(".lang-option").classList.add("active");
   document.getElementById("current-flag").src = flag;
   document.getElementById("current-lang").textContent = label;
-  document.getElementById("langDropdown").classList.remove("open");
+  setTimeout(() => {
+    document.getElementById("langDropdown").classList.remove("open");
+  }, 100);
   localStorage.setItem("lang", lang);
   localStorage.setItem("flag", flag);
   localStorage.setItem("label", label);
 }
 
-const savedLang = localStorage.getItem("lang") || "en";
-const savedFlag =
-  localStorage.getItem("flag") || "https://flagcdn.com/w20/gb.png";
-const savedLabel = localStorage.getItem("label") || "EN";
-
+// DOM ready
 document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  const savedFlag =
+    localStorage.getItem("flag") || "https://flagcdn.com/w20/gb.png";
+  const savedLabel = localStorage.getItem("label") || "EN";
+
   document.getElementById("current-flag").src = savedFlag;
   document.getElementById("current-lang").textContent = savedLabel;
+
   document.querySelectorAll("[data-lang-key]").forEach((el) => {
     const key = el.getAttribute("data-lang-key");
     if (translations[savedLang] && translations[savedLang][key]) {
