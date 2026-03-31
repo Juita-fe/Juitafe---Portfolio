@@ -239,11 +239,15 @@ const translations = {
 };
 
 // Language functions
-function toggleLangMenu() {
-  const dropdown = document.getElementById("langDropdown");
-  dropdown.classList.toggle("open");
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("open");
 }
 
+function closeMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.remove("open");
+}
 document.addEventListener("click", function (e) {
   const toggle = document.querySelector(".lang-toggle");
   if (!toggle.contains(e.target)) {

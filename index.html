@@ -18,13 +18,31 @@
     <!-- NAVBAR -->
     <nav>
       <div class="logo">Juita Enus</div>
-      <ul>
-        <li><a href="#about" data-lang-key="nav-about">About</a></li>
-        <li><a href="#services" data-lang-key="nav-services">Services</a></li>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul id="navMenu">
         <li>
-          <a href="#portfolio" data-lang-key="nav-portfolio">Portfolio</a>
+          <a href="#about" data-lang-key="nav-about" onclick="closeMenu()"
+            >About</a
+          >
         </li>
-        <li><a href="#contact" data-lang-key="nav-contact">Contact</a></li>
+        <li>
+          <a href="#services" data-lang-key="nav-services" onclick="closeMenu()"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#portfolio"
+            data-lang-key="nav-portfolio"
+            onclick="closeMenu()"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="#contact" data-lang-key="nav-contact" onclick="closeMenu()"
+            >Contact</a
+          >
+        </li>
       </ul>
       <div class="lang-toggle">
         <button class="lang-selected" onclick="toggleLangMenu()">
