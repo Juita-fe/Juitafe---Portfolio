@@ -9,40 +9,85 @@
   <body>
     <!-- TOPBAR -->
     <div class="topbar">
-      <span>Available for remote freelance projects worldwide</span>
-      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+      <span data-lang-key="topbar"
+        >Available for remote freelance projects worldwide</span
+      >
+      <a href="mailto:hello@addodo.com">📧 hello@juitafe.com</a>
     </div>
 
     <!-- NAVBAR -->
     <nav>
       <div class="logo">Juita Enus</div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-lang-key="nav-about">About</a></li>
+        <li><a href="#services" data-lang-key="nav-services">Services</a></li>
+        <li>
+          <a href="#portfolio" data-lang-key="nav-portfolio">Portfolio</a>
+        </li>
+        <li><a href="#contact" data-lang-key="nav-contact">Contact</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu()">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option active"
+            onclick="setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN')"
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="setLang('id', 'https://flagcdn.com/w20/id.png', 'ID')"
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option"
+            onclick="setLang('de', 'https://flagcdn.com/w20/de.png', 'DE')"
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="setLang('es', 'https://flagcdn.com/w20/es.png', 'ES')"
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
-      <h1>Helping businesses work smarter with AI & technology</h1>
-      <p>
-        AI Consulting | Web Development | Business Automation | No-code
+      <h1 data-lang-key="hero-title">
+        Helping businesses work smarter with AI & technology
+      </h1>
+      <p data-lang-key="hero-sub">
+        AI Consulting · Web Development · Business Automation · No-Code
         Solutions
       </p>
-      <a href="#contact" class="btn">Let's Work Together</a>
+      <a href="#contact" class="btn" data-lang-key="hero-btn"
+        >Let's Work Together</a
+      >
     </section>
 
     <!-- ABOUT -->
     <section id="about">
       <div class="about-container">
-        <img src="profile.jpg" alt="Addodo" class="profile-img" />
+        <img src="profile.jpg" alt="Juitafe" class="profile-img" />
         <div class="about-text">
-          <h2>About Me</h2>
-          <p>
+          <h2 data-lang-key="about-title">About Me</h2>
+          <p data-lang-key="about-text">
             I come from an operations background — managing digital order
-            systems, working alongside IT teams, and coordinating cross-border
+            systems, working alongside IT teams, and coordinating cross border
             business operations. That experience gave me a deep understanding of
             what businesses actually need from technology.
           </p>
@@ -52,33 +97,33 @@
 
     <!-- SERVICES -->
     <section id="services">
-      <h2>Services</h2>
+      <h2 data-lang-key="services-title">Services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <h3>AI Consulting</h3>
-          <p>
+          <h3 data-lang-key="s1-title">AI Consulting</h3>
+          <p data-lang-key="s1-text">
             Identifying where AI can save time, reduce errors, and improve how
             your business operates.
           </p>
         </div>
         <div class="service-card">
-          <h3>Web Development</h3>
-          <p>
+          <h3 data-lang-key="s2-title">Web Development</h3>
+          <p data-lang-key="s2-text">
             Clean, functional web applications built around your real business
             workflows.
           </p>
         </div>
         <div class="service-card">
-          <h3>Business Automation</h3>
-          <p>
+          <h3 data-lang-key="s3-title">Business Automation</h3>
+          <p data-lang-key="s3-text">
             Eliminating repetitive manual work through smart, reliable
             automation systems.
           </p>
         </div>
         <div class="service-card">
-          <h3>No-Code Solutions</h3>
-          <p>
-            Practical digital tools delivered faster and more cost-effectively.
+          <h3 data-lang-key="s4-title">No-Code Solutions</h3>
+          <p data-lang-key="s4-text">
+            Practical digital tools delivered faster and more cost effectively.
           </p>
         </div>
       </div>
@@ -86,63 +131,68 @@
 
     <!-- PORTFOLIO -->
     <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p class="portfolio-sub">
-        A selection of projects I've built — from web applications to AI-powered
+      <h2 data-lang-key="portfolio-title">Portfolio</h2>
+      <p class="portfolio-sub" data-lang-key="portfolio-sub">
+        A selection of projects I've built from web applications to AI-powered
         tools.
       </p>
       <div class="portfolio-grid">
         <div class="portfolio-card">
           <div class="portfolio-img">🌐</div>
           <div class="portfolio-info">
-            <h3>Personal Portfolio Website</h3>
-            <p>
+            <h3 data-lang-key="p1-title">Personal Portfolio Website</h3>
+            <p data-lang-key="p1-text">
               A responsive portfolio website built from scratch using HTML, CSS,
-              and JavaScript — featuring animations, scroll effects, and a
-              contact form.
+              and JavaScript.
             </p>
             <div class="portfolio-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
               <span class="tag">JavaScript</span>
             </div>
-            <a href="https://juitafe.com/" target="_blank" class="btn-small"
+            <a
+              href="https://juitafe.com"
+              target="_blank"
+              class="btn-small"
+              data-lang-key="view-project"
               >View Project</a
             >
           </div>
         </div>
-
         <div class="portfolio-card coming-soon">
           <div class="portfolio-img">🤖</div>
           <div class="portfolio-info">
-            <h3>AI Chatbot for Business</h3>
-            <p>
-              An AI-powered chatbot designed to handle customer inquiries,
-              automate responses, and improve business efficiency. Coming soon.
+            <h3 data-lang-key="p2-title">AI Chatbot for Business</h3>
+            <p data-lang-key="p2-text">
+              An AI-powered chatbot designed to handle customer inquiries and
+              automate responses.
             </p>
             <div class="portfolio-tags">
               <span class="tag">AI</span>
               <span class="tag">Python</span>
               <span class="tag">API</span>
             </div>
-            <span class="btn-small disabled">Coming Soon</span>
+            <span class="btn-small disabled" data-lang-key="coming-soon"
+              >Coming Soon</span
+            >
           </div>
         </div>
-
         <div class="portfolio-card coming-soon">
           <div class="portfolio-img">🧾</div>
           <div class="portfolio-info">
-            <h3>POS System for Small Business</h3>
-            <p>
-              A digital order and point-of-sale system built for small
-              businesses — streamlining orders, inventory, and sales reporting.
+            <h3 data-lang-key="p3-title">POS System for Small Business</h3>
+            <p data-lang-key="p3-text">
+              A digital order and point of sale system built for small
+              businesses.
             </p>
             <div class="portfolio-tags">
               <span class="tag">Web App</span>
               <span class="tag">Node.js</span>
               <span class="tag">Database</span>
             </div>
-            <span class="btn-small disabled">Coming Soon</span>
+            <span class="btn-small disabled" data-lang-key="coming-soon"
+              >Coming Soon</span
+            >
           </div>
         </div>
       </div>
@@ -150,11 +200,13 @@
 
     <!-- TESTIMONIALS -->
     <section id="testimonials">
-      <h2>What People Say</h2>
-      <p class="testimonials-sub">Feedback from people I've worked with.</p>
+      <h2 data-lang-key="testimonials-title">What People Say</h2>
+      <p class="testimonials-sub" data-lang-key="testimonials-sub">
+        Feedback from people I've worked with.
+      </p>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <div class="testimonial-text">
+          <div class="testimonial-text" data-lang-key="t1-text">
             "Juita Enus has a deep understanding of how businesses operate. She
             delivered a practical solution that actually fit our workflow
             perfectly."
@@ -163,13 +215,14 @@
             <div class="author-avatar">JD</div>
             <div class="author-info">
               <div class="author-name">John Doe</div>
-              <div class="author-role">Business Owner</div>
+              <div class="author-role" data-lang-key="t1-role">
+                Business Owner
+              </div>
             </div>
           </div>
         </div>
-
         <div class="testimonial-card">
-          <div class="testimonial-text">
+          <div class="testimonial-text" data-lang-key="t2-text">
             "Professional, reliable, and easy to work with remotely. Highly
             recommend for anyone looking for AI and web solutions."
           </div>
@@ -177,13 +230,14 @@
             <div class="author-avatar">SM</div>
             <div class="author-info">
               <div class="author-name">Sarah Miller</div>
-              <div class="author-role">Marketing Manager</div>
+              <div class="author-role" data-lang-key="t2-role">
+                Marketing Manager
+              </div>
             </div>
           </div>
         </div>
-
         <div class="testimonial-card">
-          <div class="testimonial-text">
+          <div class="testimonial-text" data-lang-key="t3-text">
             "Excellent work on our automation system. Saved us hours of manual
             work every week. Will definitely work together again."
           </div>
@@ -191,7 +245,9 @@
             <div class="author-avatar">RK</div>
             <div class="author-info">
               <div class="author-name">Robert Kim</div>
-              <div class="author-role">Operations Director</div>
+              <div class="author-role" data-lang-key="t3-role">
+                Operations Director
+              </div>
             </div>
           </div>
         </div>
@@ -200,17 +256,34 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <h2>Get In Touch</h2>
+      <h2 data-lang-key="contact-title">Get In Touch</h2>
       <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <input
+          type="text"
+          data-lang-key-placeholder="contact-name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          data-lang-key-placeholder="contact-email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          data-lang-key-placeholder="contact-message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit" class="btn" data-lang-key="contact-btn">
+          Send Message
+        </button>
       </form>
     </section>
 
     <footer>
-      <p>© 2026 JuitaEnus.Dev. All rights reserved!</p>
+      <p data-lang-key="footer">© 2026 Juitafe. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>
