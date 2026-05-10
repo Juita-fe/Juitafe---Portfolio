@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Juita Enus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <span>Available for remote freelance projects worldwide</span>
+      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
+      <button class="hamburger" onclick="toggleMenu(event)">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="blog.html" class="active-nav">Blog</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu(event)">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option"
+            onclick="
+              setLang('id', 'https://flagcdn.com/w20/id.png', 'ID');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option active"
+            onclick="
+              setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('de', 'https://flagcdn.com/w20/de.png', 'DE');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('es', 'https://flagcdn.com/w20/es.png', 'ES');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BLOG HERO -->
+    <section id="blog-hero">
+      <h1>Articles & Insights</h1>
+      <p>Thoughts on AI, automation, web development, and working remotely.</p>
+    </section>
+
+    <!-- BLOG FILTER -->
+    <section id="blog-filter">
+      <div class="filter-btns">
+        <button class="filter-btn active" onclick="filterBlog('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterBlog('ai')">
+          AI & Technology
+        </button>
+        <button class="filter-btn" onclick="filterBlog('automation')">
+          Business Automation
+        </button>
+        <button class="filter-btn" onclick="filterBlog('webdev')">
+          Web Development
+        </button>
+        <button class="filter-btn" onclick="filterBlog('remote')">
+          Remote Work
+        </button>
+        <button class="filter-btn" onclick="filterBlog('behind')">
+          Behind the Scenes
+        </button>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section id="blog-posts">
+      <div class="blog-grid-full">
+        <div class="blog-card-full" data-category="ai">
+          <div class="blog-card-tag">AI & Technology</div>
+          <h2>How Small Businesses Can Start Using AI Today</h2>
+          <div class="blog-card-meta">March 2026 · 5 min read</div>
+          <p>
+            AI isn't just for big corporations. Here's how small businesses can
+            start saving time and reducing costs with simple AI tools — no
+            technical background required.
+          </p>
+          <a href="article-ai.html" class="btn-small">Read Article</a>
+        </div>
+
+        <div class="blog-card-full" data-category="automation">
+          <div class="blog-card-tag">Business Automation</div>
+          <h2>5 Repetitive Tasks You Should Automate Right Now</h2>
+          <div class="blog-card-meta">March 2026 · 4 min read</div>
+          <p>
+            If you're still doing these five things manually, you're wasting
+            hours every week. Here's how to automate them quickly and
+            affordably.
+          </p>
+          <a href="article-automation.html" class="btn-small">Read Article</a>
+        </div>
+
+        <div class="blog-card-full" data-category="remote">
+          <div class="blog-card-tag">Remote Work</div>
+          <h2>How I Transitioned to Remote Work as a Developer</h2>
+          <div class="blog-card-meta">March 2026 · 6 min read</div>
+          <p>
+            My honest journey from operations to remote tech work — what worked,
+            what didn't, and what I wish I knew from the start.
+          </p>
+          <a href="article-remote.html" class="btn-small">Read Article</a>
+        </div>
+
+        <div class="blog-card-full" data-category="webdev">
+          <div class="blog-card-tag">Web Development</div>
+          <h2>Building Your First Portfolio Website from Scratch</h2>
+          <div class="blog-card-meta">March 2026 · 7 min read</div>
+          <p>
+            A step-by-step guide to building a professional portfolio website
+            using HTML, CSS, and JavaScript — no frameworks needed.
+          </p>
+          <a href="article-webdev.html" class="btn-small">Read Article</a>
+        </div>
+
+        <div class="blog-card-full" data-category="behind">
+          <div class="blog-card-tag">Behind the Scenes</div>
+          <h2>What It's Really Like Building a Digital Product from Zero</h2>
+          <div class="blog-card-meta">March 2026 · 5 min read</div>
+          <p>
+            An honest look at the process of building a POS system for small
+            businesses — the challenges, the breakthroughs, and everything in
+            between.
+          </p>
+          <a href="article-pos.html" class="btn-small">Read Article</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Juitafe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>

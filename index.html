@@ -17,7 +17,9 @@
 
     <!-- NAVBAR -->
     <nav>
-      <div class="logo">Juita Enus</div>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
       <button class="hamburger" onclick="toggleMenu(event)">☰</button>
       <ul id="navMenu">
         <li>
@@ -41,6 +43,11 @@
         <li>
           <a href="#contact" data-lang-key="nav-contact" onclick="closeMenu()"
             >Contact</a
+          >
+        </li>
+        <li>
+          <a href="blog.html" data-lang-key="nav-blog" onclick="closeMenu()"
+            >Blog</a
           >
         </li>
       </ul>
@@ -116,10 +123,10 @@
         <div class="about-text">
           <h2 data-lang-key="about-title">About Me</h2>
           <p data-lang-key="about-text">
-            I come from an operations background — managing digital order
-            systems, working alongside IT teams, and coordinating cross border
-            business operations. That experience gave me a deep understanding of
-            what businesses actually need from technology.
+            Hi, I am Juita Enus come from an operations background — managing
+            digital order systems, working alongside IT teams, and coordinating
+            cross border business operations. That experience gave me a deep
+            understanding of what businesses actually need from technology.
           </p>
         </div>
       </div>
@@ -281,6 +288,61 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <h2 data-lang-key="blog-title">Latest Articles</h2>
+      <p class="blog-sub" data-lang-key="blog-sub">
+        Thoughts on AI, automation, web development, and working remotely.
+      </p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-tag">AI & Technology</div>
+          <h3>How Small Businesses Can Start Using AI Today</h3>
+          <p>
+            AI isn't just for big corporations. Here's how small businesses can
+            start saving time and reducing costs with simple AI tools — no
+            technical background required.
+          </p>
+          <div class="blog-meta">
+            <span>March 2026</span>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-tag">Business Automation</div>
+          <h3>5 Repetitive Tasks You Should Automate Right Now</h3>
+          <p>
+            If you're still doing these five things manually, you're wasting
+            hours every week. Here's how to automate them quickly and
+            affordably.
+          </p>
+          <div class="blog-meta">
+            <span>March 2026</span>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-tag">Remote Work</div>
+          <h3>How I Transitioned to Remote Work as a Developer</h3>
+          <p>
+            My honest journey from operations to remote tech work — what worked,
+            what didn't, and what I wish I knew from the start.
+          </p>
+          <div class="blog-meta">
+            <span>March 2026</span>
+            <a href="blog.html" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="blog.html" class="btn" data-lang-key="blog-btn"
+          >View All Articles</a
+        >
       </div>
     </section>
 

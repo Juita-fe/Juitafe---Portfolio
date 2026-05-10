@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Repetitive Tasks You Should Automate Right Now | Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <span>Available for remote freelance projects worldwide</span>
+      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
+      <button class="hamburger" onclick="toggleMenu(event)">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+        <li>
+          <a href="index.html#services" onclick="closeMenu()">Services</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" onclick="closeMenu()">Portfolio</a>
+        </li>
+        <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+        <li>
+          <a href="blog.html" class="active-nav" onclick="closeMenu()">Blog</a>
+        </li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu(event)">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option active"
+            onclick="
+              setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('id', 'https://flagcdn.com/w20/id.png', 'ID');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('de', 'https://flagcdn.com/w20/de.png', 'DE');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('es', 'https://flagcdn.com/w20/es.png', 'ES');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+      <div class="article-header">
+        <div class="article-tag">Business Automation</div>
+        <h1>5 Repetitive Tasks You Should Automate Right Now</h1>
+        <div class="article-meta">March 2026 · 4 min read · by Juitafe</div>
+      </div>
+
+      <div class="article-body">
+        <p class="article-lead">
+          If you're still doing these five things manually, you're wasting hours
+          every week — hours that could be spent on work that actually moves
+          your business forward.
+        </p>
+
+        <p>
+          Automation isn't about replacing people. It's about eliminating the
+          work that nobody should be doing manually in the first place. Here are
+          five tasks that are almost universally automatable, regardless of your
+          industry.
+        </p>
+
+        <h2>1. Customer Inquiry Responses</h2>
+        <p>
+          Every business receives the same questions repeatedly — pricing,
+          availability, turnaround times, how to place an order. These answers
+          don't change. Setting up an AI-powered chatbot or automated email
+          responder to handle these instantly saves hours every week and
+          improves customer satisfaction at the same time.
+        </p>
+
+        <h2>2. Invoice Generation and Follow-ups</h2>
+        <p>
+          Creating invoices manually, tracking payment status, and sending
+          reminders are tasks that follow a completely predictable pattern.
+          Tools like QuickBooks, Wave, or even a simple Make.com workflow can
+          automate the entire process — from invoice creation to payment
+          confirmation — without any manual input.
+        </p>
+
+        <h2>3. Data Entry and Reporting</h2>
+        <p>
+          If someone on your team is copying data from one system into another,
+          that's a job for automation. Whether it's syncing orders between your
+          online store and your inventory system, or compiling weekly sales
+          figures into a report — these tasks can be fully automated using
+          no-code tools like Zapier or Make.com.
+        </p>
+
+        <h2>4. Social Media Scheduling</h2>
+        <p>
+          Creating content still requires a human touch, but scheduling and
+          publishing it doesn't. Tools like Buffer, Later, or Hootsuite allow
+          you to batch-create your content once a week and have it published
+          automatically at the optimal time — across every platform
+          simultaneously.
+        </p>
+
+        <h2>5. Appointment Scheduling</h2>
+        <p>
+          The back-and-forth of finding a meeting time is one of the most
+          unnecessary time drains in business. Tools like Calendly or TidyCal
+          let clients book directly into your calendar based on your real
+          availability — eliminating the email chain entirely.
+        </p>
+
+        <h2>Where to Start</h2>
+        <p>
+          Don't try to automate everything at once. Pick the one task from this
+          list that costs you the most time each week, and automate that first.
+          Once you see how much time it saves, expanding to the others becomes
+          obvious. The goal is to build a business that runs smoothly — even
+          when you're not watching every step.
+        </p>
+
+        <div class="article-cta">
+          <p>Need help setting up automation for your business?</p>
+          <a href="index.html#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="article-footer">
+        <a href="blog.html" class="back-link">← Back to Blog</a>
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Juitafe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

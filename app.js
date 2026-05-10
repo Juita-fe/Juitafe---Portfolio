@@ -6,13 +6,14 @@ const translations = {
     "nav-services": "Services",
     "nav-portfolio": "Portfolio",
     "nav-contact": "Contact",
+    "nav-blog": "Blog",
     "hero-title": "Helping businesses work smarter with AI & technology",
     "hero-sub":
       "AI Consulting · Web Development · Business Automation · No-Code Solutions",
     "hero-btn": "Let's Work Together",
     "about-title": "About Me",
     "about-text":
-      "I come from an operations background managing digital order systems, working alongside IT teams, and coordinating cross border business operations. That experience gave me a deep understanding of what businesses actually need from technology.",
+      "Hi, I am Juita Enus come from an operations background managing digital order systems, working alongside IT teams, and coordinating cross border business operations. That experience gave me a deep understanding of what businesses actually need from technology.",
     "services-title": "Services",
     "s1-title": "AI Consulting",
     "s1-text":
@@ -43,7 +44,7 @@ const translations = {
     "testimonials-title": "What People Say",
     "testimonials-sub": "Feedback from people I've worked with.",
     "t1-text":
-      '"Juita Enus has a deep understanding of how businesses operate. He delivered a practical solution that actually fit our workflow perfectly."',
+      '"Juita Enus has a deep understanding of how businesses operate. She delivered a practical solution that actually fit our workflow perfectly."',
     "t1-role": "Business Owner",
     "t2-text":
       '"Professional, reliable, and easy to work with remotely. Highly recommend for anyone looking for AI and web solutions."',
@@ -64,13 +65,14 @@ const translations = {
     "nav-services": "Layanan",
     "nav-portfolio": "Portofolio",
     "nav-contact": "Kontak",
+    "nav-blog": "Blog",
     "hero-title": "Membantu bisnis bekerja lebih cerdas dengan AI & teknologi",
     "hero-sub":
       "Konsultasi AI · Pengembangan Web · Otomasi Bisnis · Solusi Tidak Kode",
     "hero-btn": "Mari Bekerja Sama",
     "about-title": "Tentang Saya",
     "about-text":
-      "Saya berasal dari latar belakang operasional mengelola sistem order digital, bekerja bersama tim IT, dan mengkoordinasikan operasi bisnis lintas negara. Pengalaman itu memberi saya pemahaman mendalam tentang apa yang benar-benar dibutuhkan bisnis dari teknologi.",
+      "Halo, Saya Juita Enus berasal dari latar belakang operasional mengelola sistem order digital, bekerja bersama tim IT, dan mengkoordinasikan operasi bisnis lintas negara. Pengalaman itu memberi saya pemahaman mendalam tentang apa yang benar-benar dibutuhkan bisnis dari teknologi.",
     "services-title": "Layanan",
     "s1-title": "Konsultasi AI",
     "s1-text":
@@ -123,6 +125,7 @@ const translations = {
     "nav-services": "Leistungen",
     "nav-portfolio": "Portfolio",
     "nav-contact": "Kontakt",
+    "nav-blog": "Blog",
     "hero-title":
       "Unternehmen mit KI & Technologie intelligenter arbeiten lassen",
     "hero-sub":
@@ -130,7 +133,7 @@ const translations = {
     "hero-btn": "Zusammenarbeiten",
     "about-title": "Über mich",
     "about-text":
-      "Ich komme aus einem operativen Hintergrund Verwaltung digitaler Bestellsysteme, Zusammenarbeit mit IT-Teams und Koordination grenzüberschreitender Geschäftsabläufe. Diese Erfahrung gab mir ein tiefes Verständnis dafür, was Unternehmen wirklich von der Technologie brauchen.",
+      "Hi, Ich bin Juita Enus komme aus einem operativen Hintergrund Verwaltung digitaler Bestellsysteme, Zusammenarbeit mit IT-Teams und Koordination grenzüberschreitender Geschäftsabläufe. Diese Erfahrung gab mir ein tiefes Verständnis dafür, was Unternehmen wirklich von der Technologie brauchen.",
     "services-title": "Leistungen",
     "s1-title": "KI-Beratung",
     "s1-text":
@@ -162,7 +165,7 @@ const translations = {
     "testimonials-sub":
       "Feedback von Menschen, mit denen ich zusammengearbeitet habe.",
     "t1-text":
-      '"Juita Enus hat ein tiefes Verständnis dafür, wie Unternehmen funktionieren. Er lieferte eine praktische Lösung, die perfekt zu unserem Arbeitsablauf passte."',
+      '"Juita Enus hat ein tiefes Verständnis dafür, wie Unternehmen funktionieren. Sie lieferte eine praktische Lösung, die perfekt zu unserem Arbeitsablauf passte."',
     "t1-role": "Geschäftsinhaber",
     "t2-text":
       '"Professionell, zuverlässig und einfach remote zu arbeiten. Sehr empfehlenswert für alle, die KI und Web Lösungen suchen."',
@@ -183,6 +186,7 @@ const translations = {
     "nav-services": "Servicios",
     "nav-portfolio": "Portafolio",
     "nav-contact": "Contacto",
+    "nav-blog": "Blog",
     "hero-title":
       "Ayudando a las empresas a trabajar de forma más inteligente con IA y tecnología",
     "hero-sub":
@@ -190,7 +194,7 @@ const translations = {
     "hero-btn": "Trabajemos Juntos",
     "about-title": "Sobre Mí",
     "about-text":
-      "Vengo de un entorno operativo gestionando sistemas de pedidos digitales, trabajando junto a equipos de TI y coordinando operaciones comerciales transfronterizas. Esa experiencia me dio una comprensión profunda de lo que las empresas realmente necesitan de la tecnología.",
+      "Hola, Soy Juita Enus vengo de un entorno operativo gestionando sistemas de pedidos digitales, trabajando junto a equipos de TI y coordinando operaciones comerciales transfronterizas. Esa experiencia me dio una comprensión profunda de lo que las empresas realmente necesitan de la tecnología.",
     "services-title": "Servicios",
     "s1-title": "Consultoría de IA",
     "s1-text":

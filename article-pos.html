@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      What It's Really Like Building a Digital Product from Zero | Blog
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <span>Available for remote freelance projects worldwide</span>
+      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
+      <button class="hamburger" onclick="toggleMenu(event)">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+        <li>
+          <a href="index.html#services" onclick="closeMenu()">Services</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" onclick="closeMenu()">Portfolio</a>
+        </li>
+        <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+        <li>
+          <a href="blog.html" class="active-nav" onclick="closeMenu()">Blog</a>
+        </li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu(event)">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option active"
+            onclick="
+              setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('id', 'https://flagcdn.com/w20/id.png', 'ID');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('de', 'https://flagcdn.com/w20/de.png', 'DE');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('es', 'https://flagcdn.com/w20/es.png', 'ES');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+      <div class="article-header">
+        <div class="article-tag">Behind the Scenes</div>
+        <h1>What It's Really Like Building a Digital Product from Zero</h1>
+        <div class="article-meta">March 2026 · 5 min read · by Juitafe</div>
+      </div>
+
+      <div class="article-body">
+        <p class="article-lead">
+          Building a digital product from scratch is one of the most challenging
+          and rewarding things you can do as a developer. Here's an honest look
+          at what that process actually looks like — the good, the difficult,
+          and the unexpected.
+        </p>
+
+        <p>
+          Most articles about building digital products focus on the success
+          story. This one is about the process — what happens between the idea
+          and the finished product, and why that gap is harder to cross than
+          most people expect.
+        </p>
+
+        <h2>Where the Idea Came From</h2>
+        <p>
+          The POS system I'm building didn't start as a business idea. It
+          started as a problem I lived with for years, working in a printing
+          business that ran on a custom software system I used every single day.
+          I saw exactly where it worked, where it didn't, and what the people
+          using it actually needed versus what it was built to do.
+        </p>
+
+        <p>
+          That gap between what a system is built to do and what the people
+          using it actually need is where most digital products fail. And it's
+          exactly the gap I'm trying to close.
+        </p>
+
+        <h2>The First Problem: Scope</h2>
+        <p>
+          The first challenge with any digital product is scope. It's easy to
+          imagine a system that does everything. It's much harder to define what
+          it needs to do first and to resist the temptation to add more before
+          the core is solid.
+        </p>
+
+        <p>
+          The approach that works: start with the single most important
+          workflow. For a POS system, that's order intake. Get that right before
+          adding inventory management, reporting, or customer databases. Build
+          the core. Test it. Then expand.
+        </p>
+
+        <h2>The Technical Reality</h2>
+        <p>
+          Building a product that other businesses will actually use means
+          thinking about reliability, security, and scalability from the
+          beginning — not as afterthoughts. Every order a business processes
+          through your system is real money and real customer relationships. The
+          stakes are higher than a personal project.
+        </p>
+
+        <p>
+          This means making decisions early about data storage, backup systems,
+          and how the product will handle growth. These aren't glamorous
+          decisions but they're the ones that determine whether a product is
+          usable in the real world or just impressive in a demo.
+        </p>
+
+        <h2>What Keeps You Going</h2>
+        <p>
+          Building something from zero is slow. There are days where the
+          progress feels invisible and the problems feel insurmountable. What
+          keeps the process moving is having a clear picture of who you're
+          building for and why it matters to them.
+        </p>
+
+        <p>
+          For this product, that picture is clear — small business owners who
+          are managing their operations with systems that weren't built for
+          them, doing manual work that could be automated, and losing time every
+          day to processes that a well-designed digital tool could solve in
+          seconds.
+        </p>
+
+        <h2>What's Next</h2>
+        <p>
+          The product is in active development. The core order management system
+          is taking shape, and the next phase involves building the reporting
+          and inventory modules. The goal is a product that any small business
+          can adopt quickly, without a technical team or a complex onboarding
+          process.
+        </p>
+
+        <p>
+          Building in public — sharing the process honestly, including the parts
+          that don't go smoothly is part of how I'm approaching this. If you're
+          building something similar, or if you're a small business owner who
+          recognizes the problems I've described, I'd genuinely like to hear
+          from you.
+        </p>
+
+        <div class="article-cta">
+          <p>Interested in the POS system or want to share your experience?</p>
+          <a href="index.html#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="article-footer">
+        <a href="blog.html" class="back-link">← Back to Blog</a>
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Juitafe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

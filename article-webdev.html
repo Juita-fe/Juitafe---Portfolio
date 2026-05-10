@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Your First Portfolio Website from Scratch | Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <span>Available for remote freelance projects worldwide</span>
+      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
+      <button class="hamburger" onclick="toggleMenu(event)">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+        <li>
+          <a href="index.html#services" onclick="closeMenu()">Services</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" onclick="closeMenu()">Portfolio</a>
+        </li>
+        <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+        <li>
+          <a href="blog.html" class="active-nav" onclick="closeMenu()">Blog</a>
+        </li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu(event)">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option active"
+            onclick="
+              setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('id', 'https://flagcdn.com/w20/id.png', 'ID');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('de', 'https://flagcdn.com/w20/de.png', 'DE');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('es', 'https://flagcdn.com/w20/es.png', 'ES');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+      <div class="article-header">
+        <div class="article-tag">Web Development</div>
+        <h1>Building Your First Portfolio Website from Scratch</h1>
+        <div class="article-meta">March 2026 · 7 min read · by Juitafe</div>
+      </div>
+
+      <div class="article-body">
+        <p class="article-lead">
+          A portfolio website is the single most important tool you can have as
+          a freelancer or developer. It's your first impression, your proof of
+          work, and your 24/7 sales page — all in one.
+        </p>
+
+        <p>
+          The good news is that you don't need a framework, a CMS, or a page
+          builder to build one that looks professional. HTML, CSS, and a little
+          JavaScript are all you need to get started — and building it yourself
+          is the best way to prove you can do it.
+        </p>
+
+        <h2>Start With Structure, Not Design</h2>
+        <p>
+          Before you think about colors or fonts, decide what your portfolio
+          needs to communicate. Every effective portfolio answers three
+          questions for the visitor: Who are you? What do you do? How do I
+          contact you?
+        </p>
+
+        <p>A simple structure that works:</p>
+        <ul>
+          <li>Hero section — who you are and what you offer</li>
+          <li>About section — your background and what makes you different</li>
+          <li>Services or skills section — what you can do for clients</li>
+          <li>Portfolio section — proof that you've done it before</li>
+          <li>Contact section — how to reach you</li>
+        </ul>
+
+        <h2>Build in HTML First</h2>
+        <p>
+          Write your HTML without any styling first. Get the structure right —
+          the sections, the headings, the content hierarchy. A well-structured
+          HTML document makes everything that comes after it easier, including
+          styling, responsiveness, and maintenance.
+        </p>
+
+        <p>
+          Use semantic HTML elements like header, nav, section, article, and
+          footer. They make your code more readable and help search engines
+          understand your content — which matters for visibility.
+        </p>
+
+        <h2>Style With Purpose</h2>
+        <p>
+          Choose a color palette of two or three colors and stick to it. Pick
+          one font for headings and one for body text. Whitespace is your best
+          design tool — use it generously. The goal is clarity, not complexity.
+        </p>
+
+        <p>
+          Make your portfolio responsive from the start using CSS Flexbox and
+          Grid. Test it on mobile as you build, not after. More than half of
+          your visitors will be on a phone — your portfolio needs to work
+          perfectly at every screen size.
+        </p>
+
+        <h2>Add Interactivity With JavaScript</h2>
+        <p>
+          You don't need much JavaScript for a portfolio site. Smooth scrolling,
+          a working contact form, and subtle scroll animations are enough to
+          make it feel polished and professional. Keep your JavaScript lean and
+          purposeful — avoid adding complexity that doesn't serve the visitor.
+        </p>
+
+        <h2>Deploy It and Keep It Updated</h2>
+        <p>
+          A portfolio that nobody can find doesn't help anyone. Deploy your site
+          to GitHub Pages for free, or connect it to a custom domain for a more
+          professional appearance. Once it's live, keep it updated — add new
+          projects, refine your copy, and make sure every link works.
+        </p>
+
+        <p>
+          The best portfolio is one that accurately reflects where you are right
+          now and where you're heading. It doesn't need to be perfect, it needs
+          to be honest, clear, and live on the internet where people can
+          actually find it.
+        </p>
+
+        <div class="article-cta">
+          <p>Need help building or improving your portfolio website?</p>
+          <a href="index.html#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="article-footer">
+        <a href="blog.html" class="back-link">← Back to Blog</a>
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Juitafe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

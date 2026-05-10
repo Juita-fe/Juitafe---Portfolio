@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Small Businesses Can Start Using AI Today | Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <span>Available for remote freelance projects worldwide</span>
+      <a href="mailto:hello@juitafe.com">📧 hello@juitafe.com</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Juita Enus" class="logo-img" />
+      </a>
+      <button class="hamburger" onclick="toggleMenu(event)">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+        <li>
+          <a href="index.html#services" onclick="closeMenu()">Services</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" onclick="closeMenu()">Portfolio</a>
+        </li>
+        <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+        <li>
+          <a href="blog.html" class="active-nav" onclick="closeMenu()">Blog</a>
+        </li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-selected" onclick="toggleLangMenu(event)">
+          <img
+            id="current-flag"
+            src="https://flagcdn.com/w20/gb.png"
+            alt="EN"
+          />
+          <span id="current-lang">EN</span>
+          <span>▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button
+            class="lang-option active"
+            onclick="
+              setLang('en', 'https://flagcdn.com/w20/gb.png', 'EN');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('id', 'https://flagcdn.com/w20/id.png', 'ID');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/id.png" alt="ID" /> Indonesia
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('de', 'https://flagcdn.com/w20/de.png', 'DE');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="DE" /> Deutsch
+          </button>
+          <button
+            class="lang-option"
+            onclick="
+              setLang('es', 'https://flagcdn.com/w20/es.png', 'ES');
+              return false;
+            "
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+      <div class="article-header">
+        <div class="article-tag">AI & Technology</div>
+        <h1>How Small Businesses Can Start Using AI Today</h1>
+        <div class="article-meta">March 2026 · 6 min read · by Juitafe</div>
+      </div>
+
+      <div class="article-body">
+        <p class="article-lead">
+          Artificial Intelligence is no longer a luxury reserved for large
+          corporations. Today, small businesses across every industry are
+          discovering that AI tools are not only accessible — they're genuinely
+          transformative.
+        </p>
+
+        <p>
+          The biggest misconception small business owners have is that AI
+          requires a technical team or significant investment to get started.
+          The reality is quite different. There are dozens of AI-powered tools
+          available right now that require zero coding knowledge and cost less
+          than a cup of coffee per day.
+        </p>
+
+        <h2>Where to Start</h2>
+        <p>
+          The smartest approach is to identify your biggest time drains first.
+          What tasks are you or your team doing manually, every single day, that
+          feel repetitive and predictable? Those are your best candidates for AI
+          automation.
+        </p>
+
+        <p>Common starting points for small businesses include:</p>
+        <ul>
+          <li>Customer inquiry responses</li>
+          <li>Appointment scheduling</li>
+          <li>Invoice generation</li>
+          <li>Social media content</li>
+          <li>Data entry and reporting</li>
+        </ul>
+
+        <p>
+          Each of these can be partially or fully automated using existing AI
+          tools — without writing a single line of code.
+        </p>
+
+        <h2>Tools Worth Exploring</h2>
+        <p>
+          For customer communication, tools like ChatGPT or Claude can be
+          configured to handle frequently asked questions, draft responses, and
+          maintain a consistent brand tone across all channels.
+        </p>
+
+        <p>
+          For workflow automation, platforms like Make.com or Zapier connect
+          your existing apps and automate the hand-offs between them. For
+          content creation, AI writing assistants can help draft emails, product
+          descriptions, and social posts in minutes rather than hours.
+        </p>
+
+        <h2>The Right Mindset</h2>
+        <p>
+          AI works best as a collaborator, not a replacement. The goal isn't to
+          remove the human element from your business — it's to free up your
+          time so you can focus on the things that actually require your
+          expertise, creativity, and personal touch.
+        </p>
+
+        <p>
+          Start small, measure the impact, and expand from there. The businesses
+          that will thrive in the next decade are the ones that learn to work
+          alongside AI — not the ones waiting for the perfect moment to begin.
+        </p>
+
+        <div class="article-cta">
+          <p>Want to explore how AI can work for your business?</p>
+          <a href="index.html#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="article-footer">
+        <a href="blog.html" class="back-link">← Back to Blog</a>
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Juitafe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

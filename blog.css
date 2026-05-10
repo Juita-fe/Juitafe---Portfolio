@@ -1,0 +1,142 @@
+/* BLOG HERO */
+#blog-hero {
+  background: var(--ocean);
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+#blog-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+#blog-hero p {
+  font-size: 1.05rem;
+  color: var(--mint-mid);
+}
+
+/* BLOG FILTER */
+#blog-filter {
+  background: var(--white);
+  padding: 2rem 10%;
+  border-bottom: 1px solid var(--mint-mid);
+}
+
+.filter-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1.5px solid var(--mint-mid);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ocean);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: var(--mint);
+}
+
+.filter-btn.active {
+  background: var(--ocean);
+  color: var(--white);
+  border-color: var(--ocean);
+}
+
+/* BLOG POSTS */
+#blog-posts {
+  background: var(--mint);
+  padding: 4rem 10%;
+}
+
+.blog-grid-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card-full {
+  background: var(--white);
+  border: 1.5px solid var(--mint-mid);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.blog-card-full:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card-full.hidden {
+  display: none;
+}
+
+.blog-card-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ocean);
+  background: var(--mint);
+  border-radius: 20px;
+  padding: 3px 12px;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card-full h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ocean);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.blog-card-meta {
+  font-size: 0.8rem;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+
+.blog-card-full p {
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.active-nav {
+  color: var(--mint-mid) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #blog-hero {
+    padding: 3rem 5%;
+  }
+  #blog-hero h1 {
+    font-size: 1.8rem;
+  }
+  #blog-filter {
+    padding: 1.5rem 5%;
+  }
+  #blog-posts {
+    padding: 3rem 5%;
+  }
+  .blog-grid-full {
+    grid-template-columns: 1fr;
+  }
+}
