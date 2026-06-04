@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'hello@juitafe.com';
+        $mail->Username = 'juita@juitafe.com';
         $mail->Password = 'Juita1990#';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-        $mail->setFrom('hello@juitafe.com', 'Juita Enus Portfolio');
-        $mail->addAddress('hello@juitafe.com');
+        $mail->setFrom('juita@juitafe.com', 'Juita Enus Portfolio');
+        $mail->addAddress('juita@juitafe.com');
         $mail->addReplyTo($email, $name);
 
         $mail->Subject = "New message from $name - juitafe.com";
