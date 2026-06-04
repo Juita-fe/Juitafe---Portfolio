@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'juita@juitafe.com';
-        $mail->Password = 'Juita1990#';
+        $mail->Password = 'Juitadev1#';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
